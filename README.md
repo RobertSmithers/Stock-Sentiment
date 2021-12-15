@@ -3,6 +3,8 @@ By: Robert Smithers
 
 A stock market predictor using techniques of pair trading and sentiment analysis
 
+![Flashy Stock Pic](images/flashy_stock_pic.jpeg)
+
 ## Overview
 This entire project has been documented throughout with my continued progress and comments. With that said, here is the brief overview:
 1. **pair_stats.ipynb**: to start, I spent some time running many statistics on combinations of pairs in the NASDAQ. I will not go into depth for the overview, but many individual obstacles, thinking, and workarounds are presented in the file. The purpose of this file was to discover pairs of stocks that are highly correlated (at different offsets), with the idea that a proper ML model could use the correlations to better estimate a stock's price.
@@ -15,7 +17,7 @@ The specific numbers themselves are not too important, but for the sake of repor
 2. LSTM Model made correct buy/short decision 60% of the time
 3. Train loss: 0.6, Test loss: 0.48
 
-![3.84% Market Return](COHR-LSTM-rate-price.jpeg)
+![3.84% Market Return](images/COHR-LSTM-rate-price.jpeg)
 
 The second result seems pretty cool, but they're not as cool as I would've hoped. To keep matters simple, this can best be summarized by the fact that the data on our correlated stock is quite limited (~6 months), so training many epochs on this doesn't help too much. Unfortunately, stocks that have not been on the market for a long term were given an unfair advantage in correlation since those stocks would not have to correlate for as long with other stocks to achieve a higher correlation value.
 
