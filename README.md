@@ -3,7 +3,7 @@ By: Robert Smithers
 
 A stock market predictor using techniques of pair trading and sentiment analysis
 
-![Flashy Stock Pic](images/flashy_stock_pic.jpeg)
+![Flashy Stock Pic](images/flashy_stock_pic.jpg)
 
 ## Overview
 This entire project has been documented throughout with my continued progress and comments. With that said, here is the brief overview:
